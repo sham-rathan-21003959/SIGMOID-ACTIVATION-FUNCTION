@@ -11,13 +11,25 @@
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner / Google Colab
 
 ## Related Theoritical Concept:
+Sigmoid Activation Function is commonly used for models where we have to predict the probability as an output. Since probability of anything exists only between the range of 0 and 1, sigmoid is the right choice because of its range.<br>
+
+The function is differentiable and provides a smooth gradient, i.e., preventing jumps in output values. This is represented by an S-shape of the sigmoid activation function.<br>
+### The limitations of sigmoid function are :
+The derivative of the function is f'(x) = sigmoid(x)*(1-sigmoid(x)).<br>
+
+The output of the logistic function is not symmetric around zero. So the output of all the neurons will be of the same sign. This makes the training of the neural network more difficult and unstable.
 
 
 ## Algorithm
-1.
-2.
-3.
-4.
+1. Import packages
+2. Define neural network class
+3. Model single neuron with 3 inputs and 1 output and assign random weights to a 3 x 1 matrix with values between -1 and 1
+4. Define sigmoid function and calculate the error
+5. Multiply the error by the input and again by the gradient of the sigmoid curve
+6. Initialize a single neuron neural network
+7. Train neural network using training data
+8. Test neural network with new data
+
 
 ## Program:
 ```
